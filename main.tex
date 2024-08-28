@@ -1,0 +1,144 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1, 21 November 2016) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options. 
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=7.0cm,marginparwidth=6cm,marginparsep=0.5cm,top=1cm, bottom=0cm}
+
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{fancyhdr}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividRed}{HTML}{C43D3C}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{black}{HTML}{000000}
+\definecolor{soSleepy}{HTML}{EBE7E0}
+\definecolor{darkBejeweled}{HTML}{322740}
+\definecolor{bejeweled}{HTML}{5E1E43}
+\definecolor{pink}{HTML}{9E1C48}
+
+\colorlet{heading}{black}
+\colorlet{accentBright}{pink}
+\colorlet{background}{soSleepy}
+\colorlet{subtitle1}{darkBejeweled}
+\colorlet{subtitle2}{bejeweled}
+\colorlet{subtitle3}{pink}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+
+\begin{document}
+\name{Ashley Martinez}
+\tagline{}
+
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{ashley.carrasquel@gmail.com}
+  \phone{786-537-3822}
+  \location{Miami, FL}
+  \linkedin{linkedin.com/in/ashleymartinezcarrasquel}
+  \break 
+  \begin{quote}
+    \newline 
+Bilingual technical product manager and full-stack engineer with a passion for user experience and quality tech. Proven track record of guiding \newline teams through the software development life cycle to create user-centric solutions that generate positive business results.
+  \end{quote}
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+\cvsection[page1sidebar]{Professional Experience}
+\cvevent{Smilestack LLC}{Founder}{Miami, FL}{03/2024 – Present}
+\begin{itemize}
+\item Created many processes to operate my own consulting and real estate business.
+\item Introduced Kanban agile methodology for JV Construction Group that enabled better management of the construction of a new store for luxury retailer, CONCEPTS. The system delighted stakeholders as we created a road map that clarified timelines. I coached management through the organizational change process.
+\item Modernized the brand of local restaurant Fresh \& Wild Fish using AI.
+
+\end{itemize}
+\divider
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvevent{CVS Health}{Technical Product Manager}{Remote}{06/2022 – 11/2023}
+\begin{itemize}
+\item Incorporating human-centered design by working with 3 Specialty Pharmacy IT teams of 20+ engineers.  
+\item Lead critical modernization efforts to replace mainframe repricing of multi-million dollar rebate programs.
+\item Discovered solution that would not alter tight deadlines after identifying key gaps in road map of product and bringing together key players to solve. 
+\item Responsible for product road map. Reduced risk to timelines by informing of roadblocks and team needs in a timely manner, making difficult hiring decisions, and procuring additional resources to bolster team.
+\item Lead a team of 5 engineers and 2 designers in scrum ceremonies and team building activities to create a culture of collaboration and high performance.
+\end{itemize}
+\divider
+
+\cveventTitleWithDates{J.P. Morgan Chase \& Co}{06/2017 - 06/2022}
+\cveventSubTeam{Software Engineer}{Jersey, NJ}{UI Frameworks Team}
+\begin{itemize}
+\item Built and took to production a new application that provides real-time information to treasurers across industry using
+ \textit{React Typescript, Java, and Springboot}. 
+\item Collaborated with product owners and fellow engineers to implement stable and reusable components across the stack - including building proxies, APIs, and feature rich React web apps.
+\item Designed several features using Figma based on UX research I conducted.
+\item Modernized a legacy application by migrating to Typescript, resulting in faster debugging and output from engineers on the team.
+\item Configured CI/CD Jenkins pipeline that automated deployment scripts resulting in improved code quality.
+\end{itemize}
+\vspace{5pt}
+\cveventSubTeam{Software Engineer}{New York, NY}{Trade Compliance Team}
+\begin{itemize}
+\item  Designed and implemented in-house analytical tools to support compliance teams.
+\item Productionized feature that visualizes Bloomberg daily news feeds using \textit{Java, Javascript, and several data modeling exercises in Oracle SQL}.
+\item Configured CI/CD Jenkins pipeline that automated deployment scripts resulting in improved code quality. 
+\end{itemize}
+\vspace{5pt}
+\cveventSubTeam{Software Engineering Program - Steering Committee Lead}{}{}
+\begin{itemize}
+\item Lead several hiring and retention efforts within the firm in a leadership role, including speaking publicly at large town hall meetings and community events.
+\end{itemize}
+\end{document}
